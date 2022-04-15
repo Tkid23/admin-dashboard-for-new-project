@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JANV</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- general css  -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#" role="button">
+                        LOGOUT
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: rgb(29 30 30 / 96%)">
+            <a href="#" class="brand-link" style="border: none;">
+                <span class="brand-text font-weight-bold">JANV</span>
+            </a>
+            <div class="sidebar">
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex" style="border-bottom:1px solid #4e6081;">
+                    <div class="image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block text-white">TUN WUNNA AG</a>
+                    </div>
+                </div>
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item nav-item1">
+                            <a href="#" class="nav-link" style="background-color:  transparent">
+                                <p class="text-white">
+                                    DASHBOARD
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link active" style="background-color:rgb(86 92 98)">
+                                <i class="fas fa-solid fa-users nav-icon"></i>
+                                <p class="text-white">
+                                    All Users
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="userdetails.html" class="nav-link active">
+                                        <!-- <i class="far fa-circle nav-icon"></i> -->
+                                        <p>User Details</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="customerdetails.html" class="nav-link">
+                                        <!-- <i class="far fa-solid fa-circle-i"></i> -->
+                                        <p class="text-white">Customer Details</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item1">
+                            <a href="addnewuser.html" class="nav-link" style="background-color:  transparent">
+                                <i class="nav-icon fas fa-plus"></i>
+                                <p class="text-white">
+                                    Add New User
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link active" style="background-color:rgb(86 92 98)">
+                                <i class="fas fa-solid fa-border-all nav-icon"></i>
+                                <p class="text-white">
+                                    All Product
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="productdetails.html" class="nav-link active">
+                                        <!-- <i class="far fa-circle nav-icon"></i> -->
+                                        <p>Product Details</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="productcategories.html" class="nav-link">
+                                        <!-- <i class="far fa-circle nav-icon"></i> -->
+                                        <p class="text-white">Product Categories</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item1">
+                            <a href="addnewproduct.html" class="nav-link" style="background-color: transparent">
+                                <i class="nav-icon fas fa-plus"></i>
+                                <p class="text-white">
+                                    Add New Product
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item1">
+                            <a href="orders.html" class="nav-link" style="background-color:transparent">
+                                <i class="fas fa-solid fa-receipt nav-icon"></i>
+                                <p class="text-white">
+                                    Order Details
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="content-wrapper">
+            <!-- content header  -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0 text-bold">Customer Details</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#" style="color: rgb(44 61 61);">Home</a></li>
+                                <li class="breadcrumb-item active text-dark">Customer Details Page</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.content-header -->
+            <!-- Main content -->
+            <div class="content">
+                <section class="content">
+                    <div class="card">
+                        <div class="card-header" style="background-color:rgb(227 230 233)">
+                            <h3 class=" card-title">Customer Lists</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <table class="table main-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Password</th>
+                                        <th>Phone</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Name">Tun wunna aung</td>
+                                        <td data-label="Email">asd@gmail.com</td>
+                                        <td data-label="Password">asd123!@#</td>
+                                        <td data-label="Phone">09987123723</td>
+                                        <td data-label="Status"><span class="badge bg-gradient-success text-white"
+                                                style="width:65px;  padding: 5px 0px;">Active</span>
+                                            <span>
+                                                <a href="" class="btn btn-light btn-sm text-danger">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Name">Tun wunna aung</td>
+                                        <td data-label="Email">asd@gmail.com</td>
+                                        <td data-label="Password">asd123!@#
+                                        </td>
+                                        <td data-label="Phone">09987123723</td>
+                                        <td data-label="Status"><span class="badge bg-gradient-orange text-white"
+                                                style="width:65px; padding: 5px 0px;">Inactive</span>
+                                            <span>
+                                                <a href="" class="btn btn-light btn-sm text-danger">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Name">Tun wunna aung</td>
+                                        <td data-label="Email">asd@gmail.com</td>
+                                        <td data-label="Password">asd123!@#</td>
+                                        <td data-label="Phone">09987123723</td>
+                                        <td data-label="Status"><span class="badge bg-gradient-success text-white"
+                                                style="width:65px;  padding: 5px 0px;">Active</span>
+                                            <span>
+                                                <a href="" class="btn btn-light btn-sm text-danger">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Name">Tun wunna aung</td>
+                                        <td data-label="Email">asd@gmail.com</td>
+                                        <td data-label="Password">asd123!@#
+                                        </td>
+                                        <td data-label="Phone">09987123723</td>
+                                        <td data-label="Status"><span class="badge bg-gradient-orange text-white"
+                                                style="width:65px; padding: 5px 0px;">Inactive</span>
+                                            <span>
+                                                <a href="" class="btn btn-light btn-sm text-danger">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div><!-- /.card -->
+                </section>
+            </div>
+            <!-- /main content -->
+        </div>
+        <!-- aside  -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <div class="p-3">
+                <h5>Title</h5>
+                <p>Sidebar content</p>
+            </div>
+        </aside>
+        <!-- end of aside  -->
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2021-2022 <a href="#" style="color:rgb(44 61 61)">JANV</a>.</strong> All rights
+            reserved.
+        </footer>
+    </div>
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/adminlte.min.js"></script>
+</body>
+
+</html>
